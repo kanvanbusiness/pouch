@@ -1,0 +1,6 @@
+module Pods_Pouch_PouchTests {
+  umbrella header "Pods-Pouch-PouchTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

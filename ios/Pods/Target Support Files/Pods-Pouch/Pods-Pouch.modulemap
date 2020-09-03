@@ -1,0 +1,6 @@
+module Pods_Pouch {
+  umbrella header "Pods-Pouch-umbrella.h"
+
+  export *
+  module * { export * }
+}
