@@ -14,12 +14,8 @@ export default class PPText extends Component {
 
 const styles = {
     textStyle: {
-
-        fontFamily: 'Montserrat',
+        fontFamily: 'Montserrat-Medium',
         color: 'white',
-        fontSize: 24,
-        fontWeight:'400'
-    
-        
+        fontSize: 20,
     }
 }

@@ -2,7 +2,7 @@ import {
     LOGIN_USER, LOGIN_USER_SUCCESS,
     LOGIN_USER_FAIL, PROCESS_LOGIN,
     UPDATE_LOGIN_ERROR,
-    LOGIN_USER_CLEARDATA,
+    LOGIN_USER_CLEARDATA, USER_INFO, RESET_REQUEST, UPDATE_USER, UPDATE_USER_ERR_MSG
 
 } from '../actions/types';
 
@@ -15,6 +15,10 @@ const INITIAL_STATE = {
     isLoadingData: false,
     isLoginSuccess: false,
     phoneNumber: '',
+
+    user_info: null,
+    update_user: false,
+    update_user_err_msg: null
 
 };
 
@@ -71,6 +75,33 @@ export default (state = INITIAL_STATE, action) => {
                 isLoginSuccess: false,
 
             };
+        
+        case USER_INFO:
+            return {
+                ...state,
+                user_info: action.payload
+            }
+
+        case UPDATE_USER:
+            return {
+                ...state,
+                update_user: true,
+                update_user_err_msg: null
+            }
+
+        case UPDATE_USER_ERR_MSG:
+            return {
+                ...state,
+                update_user_err_msg: action.payload,
+                update_user: false
+            }
+
+        case RESET_REQUEST:
+            return {
+                ...state,
+                update_user: false,
+                update_user_err_msg: null
+            }
 
         default:
             return state;

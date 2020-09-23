@@ -14,7 +14,6 @@ import OTPVerification from '../screens/OTPVerification';
 import Profile from '../screens/Profile';
 import Dashboard from '../screens/Dashboard';
 import DrawerScreen from '../components/common/DrawerScreen';
-import { IMAGES } from '../utils/ImageUtils'
 
 
 const DashboardStackNavigator = createStackNavigator({
@@ -22,7 +21,7 @@ const DashboardStackNavigator = createStackNavigator({
         screen: Dashboard,
         navigationOptions: {
             headerVisible: false,
-            gesturesEnabled: false
+            gestureEnabled: false
         },
     }
 });
@@ -46,7 +45,7 @@ const StackNavigator = createStackNavigator({
     Home: {
         screen: Home,
         navigationOptions: {
-            gesturesEnabled: false,
+            gestureEnabled: false,
             headerShown: false
             
         },
@@ -55,7 +54,7 @@ const StackNavigator = createStackNavigator({
     Login: {
         screen: Login,
         navigationOptions: {
-            gesturesEnabled: false,
+            gestureEnabled: false,
             headerShown: false
             
         },
@@ -63,7 +62,7 @@ const StackNavigator = createStackNavigator({
     OTPVerification: {
         screen: OTPVerification,
         navigationOptions: {
-            gesturesEnabled: false,
+            gestureEnabled: false,
             headerShown: false
             
         },
@@ -71,7 +70,7 @@ const StackNavigator = createStackNavigator({
     Profile: {
         screen: Profile,
         navigationOptions: {
-            gesturesEnabled: false,
+            gestureEnabled: false,
         }       
     },
 
@@ -82,7 +81,7 @@ const StackNavigator = createStackNavigator({
             header: false,
             headerShown: false,
             headerVisible: true,
-            gesturesEnabled: false
+            gestureEnabled: false
 
         },
     },

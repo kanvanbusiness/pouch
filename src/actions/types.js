@@ -9,6 +9,12 @@ export const UPDATE_LOGIN_ERROR = 'update_login_error'
 export const UPDATE_CALL_LOG = 'update_call_log'
 export const LOGIN_USER_CLEARDATA = 'login_user_cleardata'
 
+export const USER_INFO = 'USER_INFO'
+export const UPDATE_USER = 'UPDATE_USER'
+export const UPDATE_USER_ERR_MSG = 'UPDATE_USER_ERR_MSG'
+export const RESET_REQUEST = 'RESET_REQUEST'
+export const RESET_USER_INFO = 'RESET_USER_INFO'
+
 
 export const LOGIN_USER_ATTEMPT_SUCCESS = 'login_user_attempt_success'
 export const LOGIN_USER_ATTEMPT_FAILED = 'login_user_attempt_failed'
@@ -24,6 +30,8 @@ export const CATEGORIES_FAILED = 'categories_failed'
 export const CATEGORIES_ERROR = 'categories_error'
 export const CATEGORIES_CLEARDATA = 'categories_cleardata'
 export const CATEGORIES_SWITCH = 'categories_switch'
+
+export const CARD_TEMPLATES = 'CARD_TEMPLATES'
 
 //Action to get All Cards  List 
 export const CARDSLISTING = 'cardslisting'

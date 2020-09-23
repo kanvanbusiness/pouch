@@ -5,7 +5,7 @@ import {
     CARDSLISTING_FAILED ,
     CARDSLISTING_ERROR ,
     CARDSLISTING_CLEARDATA,
-
+    CARD_TEMPLATES
 } from '../actions/types';
 
 const INITIAL_STATE = {
@@ -15,7 +15,7 @@ const INITIAL_STATE = {
     isShowErrorAlert: false,
     isLoadingData: false,
     isCardListingSuccess: false,
-
+    card_templates: []
 };
 
 export default (state = INITIAL_STATE, action) => {
@@ -59,6 +59,13 @@ export default (state = INITIAL_STATE, action) => {
 
             };
 
+            case CARD_TEMPLATES:
+
+            return {
+                ...state,
+                card_templates: action.payload
+            };
+
        
 
         case CARDSLISTING_CLEARDATA:
@@ -69,7 +76,7 @@ export default (state = INITIAL_STATE, action) => {
                 error: '',
                 isLoadingData: false,
                 isCardListingSuccess: false
-
+                // responseData: []
             };
 
         default:

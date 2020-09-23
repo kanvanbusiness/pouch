@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { View, TouchableOpacity, Image } from 'react-native';
 import { PPText } from '../TextViews';
-import { IMAGES } from '../../utils/ImageUtils';
 
 export default class NavigationDrawerItem extends Component {
 
@@ -11,13 +10,12 @@ export default class NavigationDrawerItem extends Component {
     }
 
     
-
     render() {
-        const { itemText, itemIcon, itemSubText, onPressDrawerItem } = this.props;
+        
+        const { itemText, itemIcon, onPressDrawerItem } = this.props;
 
         return (
             <TouchableOpacity
-
                 onPress={onPressDrawerItem}
                 style={{
                     height: 70, backgroundColor: 'transparent',

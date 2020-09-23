@@ -32,7 +32,7 @@ const INITIAL_STATE = {
 
     isCategoryDataGetSuccess: false,
     categoryResponseData: [],
-    categoryID:''
+    category: null
 
 
 
@@ -157,8 +157,7 @@ export default (state = INITIAL_STATE, action) => {
             case CATEGORIES_SWITCH:
                 return {
                     ...state,
-                    categoryID: action.payload
-    
+                    category: action.payload
                 };
 
         default:

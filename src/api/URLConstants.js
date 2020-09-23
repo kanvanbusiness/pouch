@@ -21,8 +21,10 @@ export const urlConstants = () => {
         CARDS_CATEGORY_URL: API.BASE_URL + '/cards/categories',
         CARDS_LIST_URL: API.BASE_URL + '/cards',
 
+        USER: API.BASE_URL + '/profile',
+        UPDATEPATH: API.BASE_URL + '/profile/update',
         
-        
+        CARDS_TEMPLATES: API.BASE_URL + '/cards/user/templates'
     }
 }
 

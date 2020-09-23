@@ -33,14 +33,24 @@ export const IMAGES = {
 
    BACK_BG: require('../images/back-bg-img.png'),
    BACK_BG_WITH_STRIPE: require('../images/back-with-white-stripe.png'),
-     
+
    SM_BACK_LOGO: require('../images/sm-vacation-logo.png'),
-   
 
 
-
+   cardBg: require('../images/cardImages/cardBg.png'),
+   punarnava: require('../images/cardImages/punarnava.png'),
+   bronze: require('../images/cardImages/bronze.png'),
+   silver: require('../images/cardImages/silver.png'),
+   gold: require('../images/cardImages/gold.png'),
+   platinum: require('../images/cardImages/platinum.png'),
+   qrCode: require('../images/cardImages/qrCode.png'),
+   btn: require('../images/cardImages/btn.png'),
    
+   yogaPose: require('../images/cardImages/yogaPose.png'),
+   smWorld: require('../images/cardImages/smWorld.png'),
    
+   close: require('../images/cardImages/close.png'),
+   avatar: require('../images/cardImages/avatar.png'),
 
 }
 

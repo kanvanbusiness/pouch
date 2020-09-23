@@ -5,7 +5,7 @@ import {
  CARDSLISTING_FAILED ,
  CARDSLISTING_ERROR ,
  CARDSLISTING_CLEARDATA,
-
+ CARD_TEMPLATES
 } from './types';
 import { checkNetwork } from '../utils';
 
@@ -45,11 +45,11 @@ export const getAllCardLists = (authToken) => {
                     doGetAllCards(authToken)
                         .then(response => {
                             // console.warn('Loginuser response is', loginUserResp);
-                            console.log('Categories Data is', response);
+                            // console.log('Categories Data is', response);
                             console.log('Categories Data Status is', response.status);
 
                             if (response.status == 200) {
-
+                                // console.log('Response Data', response.data)
                                 cardsRequestSuccess(dispatch, response.data);
 
                             } else {
@@ -72,7 +72,26 @@ export const getAllCardLists = (authToken) => {
 
 };
 
-
+export const getCardTemplates = (authToken) => {
+    return (dispatch) => {
+      const headers = {
+        Authorization: "Bearer " + authToken,
+      };
+  
+      makeAxiosRequest(urlConstants().CARDS_TEMPLATES, httpMethods.GET, headers, null)
+        .then((res) => {
+          if (res.status == 200) {
+            dispatch({ type: CARD_TEMPLATES, payload: res.data });
+          } else {
+            dispatch({ type: CARD_TEMPLATES, payload: [] });
+        }
+    })
+    .catch((err) => {
+        console.log(err);
+        dispatch({ type: CARD_TEMPLATES, payload: [] });
+        });
+    };
+  };
 
 
 const cardsRequestSuccess = (dispatch, categoryData) => {

@@ -173,9 +173,14 @@ export const categoriesClearData = () => {
 
 }
 
-export const switchCategory = (catID) => {
+export const switchCategory = (catData) => {
     return (dispatch) => {
-        dispatch({ type: CATEGORIES_SWITCH, payload: catID});
+        dispatch({ type: CATEGORIES_SWITCH, payload: catData});
     };
+};
 
+export const clearSwitchCategory = () => {
+    return (dispatch) => {
+        dispatch({ type: CATEGORIES_SWITCH, payload: null});
+    };
 };
